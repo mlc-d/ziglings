@@ -28,9 +28,9 @@ fn addFive(n: u32) MyNumberError!u32 {
     //
     var x = try detect(n);
 
-    const stdout = std.io.getStdOut().writer();
+    // const stdout = std.io.getStdOut().writer();
 
-    // stdout.print("x={}\n", .{x}) // will fail, since it's not prepared to print errors;
+    // stdout.print("x={}\n", .{x}); // will fail, since it's not prepared to print errors;
     std.debug.print("x={}\n\n", .{x});
 
     return x + 5;
